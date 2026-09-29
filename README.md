@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FitLog - Ultimate Workout & Plan Tracker
 
-## Getting Started
+A modern, responsive, and high-performance fitness web application built with Next.js App Router, Tailwind CSS, and DaisyUI. FitLog empowers users to explore exercises, track daily workout routines, monitor calculated calories and workout durations, and manage custom training plans seamlessly.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** [Next.js](https://nextjs.org/) (App Router, Client & Server Components)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) & [DaisyUI](https://daisyui.com/)
+- **Icons:** [Lucide React](https://lucide.react.dev/)
+- **State Management:** React Context API
+- **API Backend:** Cloudflare-hosted FitLog API (`/api/fitlog`)
+- **Deployment:** [Vercel](https://vercel.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ 5 Key Features
 
-## Learn More
+1. **Dynamic Exercise Library & API Integration:**
+   Fetches dynamic workout data from a Cloudflare Worker API endpoint with fast caching to explore various lifts, equipment types, and estimated calories burned.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Interactive "My Plan" Dashboard:**
+   Offers dual-tab organization ("Today's Plan" and "Saved") to filter active routines, calculate real-time cumulative stats (total exercises, duration in minutes, and total calories), and remove finished lifts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Multi-Criteria Sorting System:**
+   Enables instant sorting across workout lists by **Duration**, **Calories**, or **Rating** to help users prioritize their workouts based on immediate training goals.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Dynamic Routing & Detail Views:**
+   Provides dedicated `/workout/[id]` detail pages showcasing comprehensive instructions, targeted muscle groups, equipment requirements, and interactive status controls.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. **Fully Responsive & Optimized UI/UX:**
+   Crafted with a sleek dark-themed interface, custom layout badges, mobile-optimized navigation drawers, and non-blocking `loading.tsx` page transition states.
