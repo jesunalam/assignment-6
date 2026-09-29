@@ -1,4 +1,5 @@
-import WorkOutPage from "../workout/page";
+
+import CardData from "./cardData";
 // import CardData from "./cardData";
 import { IExercise } from "./user";
 
@@ -29,8 +30,8 @@ const UserApi = async () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4/5 mx-auto px-4 pt-10">
         {allData.map((data) => (
-          // <CardData key={data.id} data={data} />
-          <WorkOutPage key={data.id} data={data}></WorkOutPage>
+          <CardData key={data.id} data={data} />
+          // <WorkOutPage key={data.id} data={data}></WorkOutPage>
         ))}
       </div>
     </>
