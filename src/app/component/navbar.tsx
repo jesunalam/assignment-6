@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IExercise } from "./user";
 import { useContext } from "react";
-import { Econtext } from "@/context/context";
+ import { Econtext } from "@/context/context";
 
 interface ExerciseContextType {
   todayPlan: IExercise[];
@@ -12,7 +12,7 @@ interface ExerciseContextType {
 }
 
 const Navbar = () => {
-  const { todayPlan, savedPlan } = useContext(Econtext) as ExerciseContextType;
+   const { todayPlan, savedPlan } = useContext(Econtext) as ExerciseContextType;
 
   return (
     <div>
